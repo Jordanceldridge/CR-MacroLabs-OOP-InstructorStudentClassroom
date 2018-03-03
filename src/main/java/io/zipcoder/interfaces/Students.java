@@ -1,7 +1,11 @@
 package io.zipcoder.interfaces;
 
-public final class Students extends People {
+public final class Students extends People implements Learner {
     private static final Students INSTANCE = new Students();
+
+    public void learn(double numberOfHours) {
+
+    }
 
     private Students(){
         Student Bob = new Student(1);
